@@ -5,11 +5,9 @@ plugins {
 }
 
 android {
-    namespace = "com.example.my_app"
     compileSdk = flutter.compileSdkVersion
 
     defaultConfig {
-        applicationId = "com.example.my_app"
         minSdk = flutter.minSdkVersion
         targetSdk = flutter.targetSdkVersion
         versionCode = flutter.versionCode
@@ -20,10 +18,6 @@ android {
         isCoreLibraryDesugaringEnabled = true
         sourceCompatibility = JavaVersion.VERSION_17
         targetCompatibility = JavaVersion.VERSION_17
-    }
-
-    kotlinOptions {
-        jvmTarget = JavaVersion.VERSION_17.toString()
     }
 }
 
