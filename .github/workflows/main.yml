@@ -21,6 +21,9 @@ jobs:
       - name: Get dependencies
         run: flutter pub get
 
+      - name: Increase Gradle memory
+        run: echo "org.gradle.jvmargs=-Xmx4096m" >> android/gradle.properties
+
       - name: Build APK
         run: flutter build apk --debug
 
